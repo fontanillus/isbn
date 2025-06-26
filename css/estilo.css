@@ -1,0 +1,10 @@
+body {
+    width: 60%;
+    height: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+}
+
+#isbn {
+    width: 300px;
+}
