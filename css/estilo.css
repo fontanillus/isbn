@@ -3,8 +3,13 @@ body {
     height: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: white;
+    margin: 0 auto;
 }
 
 #isbn {
     width: 300px;
+}
+
+.lloc {
+text-align: center;
 }
