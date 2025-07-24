@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculo DC de un ISBN-10 (9 dígitos) o ISBN-13 (12 dígitos)</title>
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/estilo.css">
     <link rel="shortcut icon" href="img/isbn.jpg" type="image/x-icon">
 </head>
@@ -53,21 +54,23 @@ El número que falta para llegar al múltiplo de 10 es el dígito de control, es
 Por lo tanto, el IBSN es válido-->
 
 <body>
-    <div id="tarjeta" class="posicion">
+    <div id="tarjeta" class="centrar">
         <form onsubmit="return false;">
             <h1>¿Quieres calcular el Dígito de Control ISBN-10 o ISBN-13?</h1>
             <p>
-                <label for="isbn">Escribe el número ISBN del que quieres calcular el Dígito de Control:</label>
+                <label for="isbn">Escribe el número ISBN del que quieres calcular el Dígito de Control:</label><br>
                 <input type="number" id="isbn" placeholder="Número de ISBN sin dígito de control">
             </p>
-            <p><button type="button" onclick="CalcularDigitoControl()">Calcular Dígito de Control</button></p>
-
+            <p>
+                <button type="button" onclick="CalcularDigitoControl()">Calcular Dígito de Control</button>
+            </p>
             <p id="resultadoDigitoControl"></p>
-            <div class="lloc">
-                <img src="./img/isbn.jpg" alt="foto">
-            </div>
         </form>
+        <div class="centrar">
+            <img src="./img/isbn.jpg" alt="foto">
+        </div>
     </div>
+
 
     <script src="./js/dc.js"></script>
 </body>
